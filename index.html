@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<title>F1 API</title>
+</head>
+<body>
+
+    <div class="container-fluid" id="container">
+        <div class="row py-3">
+            <form id="formData">
+                <label for="season">Season</label>
+                <input type="text" id="season" name="season" placeholder="Season">
+        
+                <label for="round">Round</label>
+                <input type="text" id="round" name="round" placeholder="Round">
+
+                <button type="button" onclick="loadData()">Load Data</button>
+                
+            </form>
+        </div>
+        <div class="row py-3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>position</th>
+                        <th>name</th>
+                        <th>nationality</th>
+                        <th>sponser</th>
+                        <th>points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="table-row-0">
+                        <td>1</td>
+                    </tr>
+                    <tr id="table-row-1">
+                        <td>2</td>
+                    </tr>
+                    <tr id="table-row-2">
+                        <td>3</td>
+                    </tr>
+                    <tr id="table-row-3">
+                        <td>4</td>
+                    </tr>
+                    <tr id="table-row-4">
+                        <td>5</td>
+                    </tr>
+                    <tr id="table-row-5">
+                        <td>6</td>
+                    </tr>
+                    <tr id="table-row-6">
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
